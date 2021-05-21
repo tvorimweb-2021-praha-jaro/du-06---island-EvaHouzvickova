@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Island</title>
 </head>
 <body>
-    <header>
-        <h1>Island</h1>
-        <p>Když se řekne Island, spoustě lidem se jako první vybaví sníh a led. Sama jsem tam strávila téměř rok života a zem pokrytou sněhem a ledem jsem zažila jen jediný den. Jednou věcí si ale jistá jsem: že návštěva ostrova pod polárním kruhem je pro každého tak silným zážitkem, že se sem bude chtít vrátit.</p>
-
-        <p>Jana Zcela Vymyšlená</p>
+    <header class="hlavicka">
+        <h1 class="hlavni-nadpis">Island</h1>
+        <p class="hlavicka-text">Když se řekne Island, spoustě lidem se jako první vybaví sníh a led. Sama jsem tam strávila téměř rok života a zem pokrytou sněhem a ledem jsem zažila jen jediný den. Jednou věcí si ale jistá jsem: že návštěva ostrova pod polárním kruhem je pro každého tak silným zážitkem, že se sem bude chtít vrátit.</p>
+        <hr class="cara-autor">
+        <p class="autor">Jana Zcela Vymyšlená</p>
     </header>
-    <nav>
-        <a href="#">Úvod</a>
-        <a href="#">Proč jet na Island</a>
-        <a href="#">Co musíte vidět</a>
-        <a href="#">Fotogalerie</a>
+    <nav class="navigace">
+        <a href="#uvod">Úvod</a>
+        <a href="#proc-jet">Proč jet na Island</a>
+        <a href="#co-videt">Co musíte vidět</a>
+        <a href="#fotogalerie">Fotogalerie</a>
     </nav>
     <main>
-        <section class="uvod">
-            <p>Island je jeden z nejpozoruhodnějších kousků pevniny, který v Evropě můžete navštívit. Neuchvátí jenom fotografy - krajináře, ale snad každého, kdo miluje divokou přírodu. Ne nadarmo se také říká, že si jej při první návštěvě zamilujete a budete se muset stále vracet. Byl to i můj případ!</p>
+        <section id="uvod">
+            <div class="uvod">
+                <p>Island je jeden z nejpozoruhodnějších kousků pevniny, který v Evropě můžete navštívit. Neuchvátí jenom fotografy - krajináře, ale snad každého, kdo miluje divokou přírodu. Ne nadarmo se také říká, že si jej při první návštěvě zamilujete a budete se muset stále vracet. Byl to i můj případ!</p>
 
-            <p>Rád bych popsal některá místa, která prostě při návštěvě nemůžete vynechat. Není ani důvod, jejich dostupnost je výborná díky hlavní okružní cestě, po které pohodlně celý ostrov za několik dní objedete bez toho, abyste museli zajíždět do hůře dostupného vnitrozemí. I tam je samozřejmě spousta dech beroucích míst, ale za pár dní se stihnout bohužel vše nedá.</p>
+                <p>Rád bych popsal některá místa, která prostě při návštěvě nemůžete vynechat. Není ani důvod, jejich dostupnost je výborná díky hlavní okružní cestě, po které pohodlně celý ostrov za několik dní objedete bez toho, abyste museli zajíždět do hůře dostupného vnitrozemí. I tam je samozřejmě spousta dech beroucích míst, ale za pár dní se stihnout bohužel vše nedá.</p>
 
-            <p>Když máte to štěstí a zrovna nesoptí některá z místních sopek, nabízí tento vulkanicky nejaktivnější ostrov Evropy úžasné pohledy, které prostě jinde nemáte šanci spatřit. Pro Středoevropana, suchozemce je to úplně jiný svět.</p>
-
-            <img src="/images/island1.jpg" width="475px" height="265px" alt="Island">
-
-            <p>Photo &copy; <a href="https://flic.kr/p/yFnyAT">Moyan Brenn</a></p> 
+                <p>Když máte to štěstí a zrovna nesoptí některá z místních sopek, nabízí tento vulkanicky nejaktivnější ostrov Evropy úžasné pohledy, které prostě jinde nemáte šanci spatřit. Pro Středoevropana, suchozemce je to úplně jiný svět.</p>
+            </div>
+            <div class="fotka-popis">
+                <img src="/images/island1.jpg" width="475px" height="265px" alt="Island">
+                <p>Photo &copy; <a href="https://flic.kr/p/yFnyAT">Moyan Brenn</a></p> 
+            </div>
         </section>
-        <section class="proc-jet">
+        <section id="proc-jet" class="proc-jet">
             <h2>Proč jet na Island</h2>
             <p>Island je domovem největšího evropského ledovce, vodopádu s nejmohutnějším průtokem a tisíců místních koní a divokých hus, které majestátně ve dvojicích křižují nebe a dokreslují tak neopakovatelnou atmosféru tohoto pozoruhodného kousku pevniny kdesi v Atlantiku. K tomu mohutné skalní útvary, čnící z moře jako tiší strážci místních černých lávových pláží, stovky metrů vysoké útesy, které jsou domovem racků a papuchalků a především obrovské vodopády všeho druhu. Panují tu trochu jiná měřítka, a to téměř ve všem.</p>
 
@@ -46,7 +50,7 @@
 
             <p>Photo &copy; <a href="https://flic.kr/p/yFnyAT">Moyan Brenn</a></p> 
         </section>
-        <section class="co-videt">
+        <section id="co-videt" class="co-videt">
             <h2>Co musíte vidět</h2>
             <p><strong>Poloostrov Reykjanes</strong> - Než z letiště v Keflavíku zamíříte do hlavního města, zajeďte se podívat na tento poloostrov. Je to zajížďka jen pár kilometrů a rázem se dostanete do krajiny pro Island přímo typické. Cestu lemují lávová pole připomínající doslova měsíční krajinu. Pro Středoevropana něco neuvěřitelného. Ani kousek zeleně, kam oko dohlédne jen černá suť a rozpraskané lávové desky. Mezi tím vším až mysteriózně vypadající geotermální elektrárny. Na pobřeží pak vystupují z vody poutavé skalní útvary Reykjanesta.</p>
 
@@ -66,7 +70,7 @@
 
             <p><strong>Dyrhólaey</strong> - Jde o nejjižnější cíp celého strova s vysokými útesy, na kterých ční jako tichý strážce velmi fotogenický maják. Zdejší útesy jsou také domovem Papuchalků (Fratercula arctica). Tito ptáci jsou opravdoví klauni a jejich nemotorný pohyb prostě musí vykouzlit úsměv na tváři každému. Mohutný lávový útes, ve kterém voda vyhloubila dvě skalní brány nebývalých rozměrů, prostě nesmíte vynechat.</p>
         </section>
-        <section class="fotogalerie">
+        <section id="fotogalerie" class="fotogalerie">
             <h2>Fotogalerie</h2>
             <figure>
                 <img src="/images/nahled1.jpg" width="470px" height="265px" alt="Myvatn Aurora">

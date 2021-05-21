@@ -1,1 +1,81 @@
 *, ::after, ::before { box-sizing: border-box; } 
+
+:root {
+    --popisky:#aca9a9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color:  #f5f5f5;
+}
+
+.hlavni-nadpis {
+    font-family:'Raleway', sans-serif; 
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.hlavicka {
+    background-color: #1351c5;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.02),rgba(0, 0, 0, 0.602) ),url(/images/island-hlavicka.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+.autor {
+    color: var(--popisky);
+    opacity: 0.7;
+}
+
+.cara-autor {
+    width: 15%;
+    background: #ffffff;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.navigace {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.navigace a {
+    text-decoration: none;
+    color: var(--popisky);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #aca9a91e;
+    padding: 0.5rem;
+}
+
+.uvod {
+    padding: 1.5rem;
+}
+
+.fotka-popis img {
+    width: 100%;
+}
+
+.fotka-popis a {
+    color: var(--popisky);
+}
+
+.fotka-popis {
+    color: var(--popisky);
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.fotka-popis p {
+    margin: 0;
+}
