@@ -2,6 +2,8 @@
 
 :root {
     --popisky:#aca9a9;
+    --cara:#629edb;
+    --pozadi:#f5f5f5;
 }
 
 body {
@@ -10,7 +12,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 1rem;
     line-height: 1.6;
-    background-color:  #f5f5f5;
+    background-color: var(--pozadi);
 }
 
 .hlavni-nadpis {
@@ -31,13 +33,15 @@ body {
 }
 
 .autor {
-    color: var(--popisky);
-    opacity: 0.7;
+    color: #fff;
+    opacity: 0.5;
+    font-style: italic;
 }
 
 .cara-autor {
     width: 15%;
-    background: #ffffff;
+    background-color: #aca9a9;
+    color:#aca9a9;
     margin-top: 2rem;
     opacity: 0.7;
 }
@@ -47,6 +51,8 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 1.5rem;
+    margin-bottom: -1rem;
+    margin-top: 0.5rem;
 }
 
 .navigace a {
@@ -58,7 +64,7 @@ body {
     padding: 0.5rem;
 }
 
-.uvod {
+.sekce-text {
     padding: 1.5rem;
 }
 
@@ -77,5 +83,66 @@ body {
 }
 
 .fotka-popis p {
+    margin: 0;
+}
+
+.sekce-nadpis {
+    font-family:'Raleway', sans-serif; 
+    padding: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+
+.cara-sekce {
+    color: var(--cara);
+    background-color:var(--cara);
+    height: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 15%;
+    border: none;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    color: var(--popisky);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+figcaption a {
+    color: var(--popisky);
+}
+
+figure img {
+    width: 100%;
+}
+
+.galerie-autor {
+    font-weight: bold;
+    color: #7e7777 ;
+}
+
+.fig-1 {
+    margin-top: 2rem;
+}
+
+.paticka {
+    background-image: linear-gradient(#bbb6b6c0, #80808036 15%);
+    padding: 1.5rem;
+    font-size: 0.7rem;
+    color: var(--popisky);
+    font-weight: bold;
+}
+
+.paticka a {
+    color: var(--popisky);
+}
+
+.paticka p {
     margin: 0;
 }
