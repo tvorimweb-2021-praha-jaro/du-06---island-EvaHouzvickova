@@ -10,21 +10,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     background-color: var(--pozadi);
 }
 
 .hlavni-nadpis {
     font-family:'Raleway', sans-serif; 
-    font-size: 3.5rem;
-    margin: 0;
+    font-size: 3.3rem;
+    margin: -1rem 0 1rem 0;
 }
 
 .hlavicka {
     background-color: #1351c5;
     background-image: linear-gradient( rgba(255, 255, 255, 0.02),rgba(0, 0, 0, 0.602) ),url(/images/island-hlavicka.jpg);
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -32,18 +32,29 @@ body {
     padding: 1.5rem;
 }
 
+.hlavicka-text {
+    margin:0;
+}
 .autor {
     color: #fff;
     opacity: 0.5;
     font-style: italic;
+    margin-top: 2rem;
 }
 
-.cara-autor {
-    width: 15%;
-    background-color: #aca9a9;
-    color:#aca9a9;
-    margin-top: 2rem;
-    opacity: 0.7;
+header {
+    position:relative;
+}
+.autor::before{
+    position: absolute;
+    content: '';
+    width: 70px;
+    background-color: var(--popisky);
+    bottom: 4.6rem;
+    left: 50%;
+    right: 0;
+    height: 2px;
+    margin-left:-35px;
 }
 
 .navigace {
@@ -92,33 +103,36 @@ body {
     margin: 1rem 0 0 0;
 }
 
-.cara-sekce {
-    color: var(--cara);
-    background-color:var(--cara);
-    height: 5px;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    width: 15%;
-    border: none;
+section{
+    position: relative;
 }
 
-figure {
+h2::after {
+    position: absolute;
+    content: '';
+    width: 75px;
+    background-color: var(--cara);
+    top: 5rem;
+    left: 0;
+    height: 4px;
+}
+
+.galerie-obrazek {
     margin-left: 0;
     margin-right: 0;
 }
 
-figcaption {
+.galerie-popis {
     color: var(--popisky);
     text-align: center;
     font-size: 0.8rem;
 }
 
-figcaption a {
+.galerie-popis a {
     color: var(--popisky);
 }
 
-figure img {
+.galerie-obrazek img {
     width: 100%;
 }
 
@@ -145,4 +159,137 @@ figure img {
 
 .paticka p {
     margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .navigace {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigace a {
+        border-top: 1px solid #aca9a91e;
+        border-left: 1px solid #aca9a91e;
+        flex: auto;
+        font-size: 0.75rem;
+    }
+
+    .navigace a:first-child {
+        border-left: none;
+    }
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galerie-obrazek {
+        margin: 0;
+        flex-basis: 50%;
+    }
+
+    .cara-galerie {
+        margin-bottom: 1.5rem;
+    }
+
+    .fotka-popis {
+        position: relative;
+        color: var(--pozadi);
+    }
+
+    .fotka-popis p {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .fotka-popis a,
+    .galerie-popis a,
+    .galerie-autor {
+        color: var(--pozadi);
+    }
+
+    .galerie-obrazek {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .galerie-popis {
+        position: absolute;
+        bottom: -3rem;
+        left: 0;
+        right: 0;
+        color: var(--pozadi);
+        font-size: 0.8rem;
+        opacity:0;
+        transition: 0.4s easy-in-out;
+    }
+
+    .box-shadow {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-shadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.308);
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+    }
+
+    .galerie-obrazek img{
+        margin-bottom: -0.5rem;
+        transform: scale(1);
+        transition: transform 0.3s;
+    }
+
+    .galerie-obrazek:hover .box-shadow::after {
+        box-shadow: inset 0 -70px 0 0 rgba(0, 0, 0, 0.308);
+    }
+
+    .galerie-obrazek:hover .galerie-popis {
+        bottom: 1rem;
+        opacity: 1;
+    }
+
+    .galerie-obrazek:hover img{
+        transform: scale(1.2);
+    }
+
+    .hlavni-nadpis {
+        font-size: 4.2rem;
+    }
+
+    .sekce-nadpis {
+        font-size: 2rem;
+    }
+
+    .island-1,
+    .island-2, 
+    .island-3 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2::after {
+        top:6rem;
+    }
+
+    .galerie img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .galerie {
+        margin-top: 2rem;
+    }
 }
